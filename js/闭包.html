@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>闭包</title>
+</head>
+<body>
+	<p>1.函数嵌套函数的，内部函数可以引用外部函数的变量</p>
+	<p>2.理解闭包要先理解垃圾回收机制、变量和参数不会被垃圾回收机制给收回</p>
+	<p>好处1：希望一个变量长期驻扎在内存中 </p>
+	<p>好处2：避免全局变量的污染 </p>
+	<script type="text/javascript">
+		function one(a){
+				var b = 5;
+				function two(){
+					alert(a);
+					alert(b);
+				}
+		}
+
+		// var a = 1;
+		// function aaa(){
+		// 	a++;
+		// 	alert(a);
+		// }
+
+		//aaa();
+		//aaa();
+
+		//改造上面
+		function first(){
+			var a = 1;
+			return function()
+			{
+				a++;
+				alert(a);
+			}
+		}
+		var add = first();
+		add();
+		add();
+		alert("a = "+a);
+
+	</script>
+</body>
+</html>

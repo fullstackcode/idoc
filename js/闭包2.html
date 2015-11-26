@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>闭包用法</title>
+</head>
+<body>
+ 	<p>1、模块化代码</p>
+ 	<p>1、</p>
+
+	<ul>
+		<li>test</li>
+		<li>test</li>
+		<li>test</li>
+		<li>test</li>
+		<li>test</li>
+	</ul>
+ 	<script type="text/javascript">
+ 		var ICBCTools = (function(){
+ 			var a = 1;
+
+ 			function one(){
+ 				a++;
+ 				alert(a);
+ 			}
+
+ 			function two(){
+ 				a++;
+ 				alert(a);
+ 			}
+ 			return {
+ 				one:one,
+ 				two:two
+ 			}
+ 		})();
+
+ 		//ICBCTools.one();
+ 		//ICBCTools.two();
+
+
+ 		var oli = document.getElementsByTagName("li");
+ 		// for(var i=0;i<oli.length;i++){
+ 		// 	oli[i].onclick = function(){
+ 		// 		alert(i);
+ 		// 	}
+ 		// }
+ 		<!--内部函数 引用外部函数传入的变量-->
+ 		// for(var i=0;i<oli.length;i++){
+ 		// 	(function(i){
+ 		// 		oli[i].onclick = function(){
+ 		// 			alert(i);
+ 		// 		}
+ 		// 	})(i)
+ 		// }
+
+ 		 for(var i=0;i<oli.length;i++){
+ 			oli[i].onclick = (function(i){
+ 				 return function(){
+ 					alert(i);
+ 				}
+ 			})(i);
+ 		}
+ 	</script>
+</body>
+</html>
