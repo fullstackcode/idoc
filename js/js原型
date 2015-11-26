@@ -1,0 +1,13 @@
+Person 有一个属性prototype  prototype指向了另外一块内存是是一个key value 形式
+
+
+
+var Person ＝ function(name){
+	this.name = name;
+}
+
+Person.prototype.say =function(){
+	alert(this.name);
+}
+
+var p1 = new Person("zhangsan");

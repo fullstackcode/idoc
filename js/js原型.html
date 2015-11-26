@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>原型链prototype</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+
+		var Person = function(name){
+			this.name = name
+		}
+
+		Person.prototype.say = function(){
+			alert(this.name);
+		};
+
+		var p1 = new Person("张三");
+		p1.say();
+
+		var p2 = new Person("李四");
+		p2.say();
+
+		alert(p2.__proto__);
+
+	</script>
+</body>
+</html>
