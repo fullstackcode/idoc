@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3的渐变效果</title>
+	<style type="text/css">
+		div{
+			width: 500px;
+			height: 200px;
+			//background-image: linear-gradient(green,red); //从绿到红的线性渐变
+
+		}
+		id::-webkit-input-placeholder{
+			text-align: left;
+			force:true;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<input id="ph" type="text" placeholder="测试" force="true">
+	<script type="text/javascript">
+	$('ph').placeholder({force:true})
+	</script>
+</body>
+</html>
