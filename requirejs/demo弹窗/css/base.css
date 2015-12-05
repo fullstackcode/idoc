@@ -1,0 +1,32 @@
+html,body,div,tr,td,span,p{padding: 0;margin: 0;}
+.window_boundingbox{position: fixed;border:1px solid #ccc;width: 500px;height: 300px;left:50%;top:100px;box-shadow: 0 0 12px rgba(0,0,0,.5);}
+.window_boundingbox input{position:absolute; bottom:10px;left:50%;width:100px;margin-left: -50px}
+.window_title{background-color:#333;color:#fff;padding:5px; font-size: 20px;text-align: center; }
+.window_body{padding: 10px;}
+.window_close{padding: 3px 5px ; position: absolute; right:0px; top:2px;cursor: pointer;color:#fff;}
+.window_modal{
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.3;
+	position: absolute;
+	left:0;
+	top:0;
+	
+}
+
+.window_skin_a.window_boundingbox{position: fixed;border:1px solid #ccc;width: 500px;height: 300px;left:50%;top:100px;box-shadow: 0 0 12px rgba(0,0,0,.5);}
+.window_skin_a .window_boundingbox input{position:absolute; bottom:10px;left:50%;width:100px;margin-left: -50px}
+.window_skin_a .window_title{background-color:#eee;color:#fff;padding:5px; font-size: 20px;text-align: center; }
+.window_skin_a .window_body{padding: 10px;}
+.window_skin_a .window_close{padding: 3px 5px ; position: absolute; right:0px; top:2px;cursor: pointer;color:#fff; background-color: green}
+.window_skin_a .window_modal{
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.3;
+	position: absolute;
+	left:0;
+	top:0;
+
+}
