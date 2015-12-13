@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hashchange</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="animate/animate.css">
+</head>
+<body>
+	<a href="#link1">link1</a>
+	<a href="#link2">link2</a>
+	<div class="container">
+	<table class="table table-striped animated fadeInLeft" style="display:none">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-hover animated flip" style="display:none">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>电视剧</th>
+          <th>演员</th>
+          <th>播放率</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>芈月传</td>
+          <td>孙俪、刘涛、马苏、方中信、黄轩</td>
+          <td>111323231232</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>秦时明月</td>
+          <td>陆毅、陈妍希、蒋劲夫</td>
+          <td>14938493849</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>北上广不相信眼泪</td>
+          <td>朱亚文、马伊琍、张兆辉、张可颐、侯京健</td>
+          <td>95895303403840</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <script>
+    window.onhashchange = function(e){
+    	console.log(e.newURL);
+    	console.log(e.oldURL);
+    	if(e.newURL.indexOf('#link1')!=-1){
+    		document.querySelector(".table-striped").style['display']="";
+    		document.querySelector(".table-hover").style['display']="none";
+    	}
+
+    	if(e.newURL.indexOf('#link2')!=-1){
+    		document.querySelector(".table-hover").style['display']="";
+    		document.querySelector(".table-striped").style['display']="none";
+    	}
+    }
+    </script>
+</body>
+</html>

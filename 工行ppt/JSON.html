@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New API JSON replace eval('('++')')</title>
+</head>
+<body>
+	请输入JSON字符串:<textarea id="txt" style="width:200px;height:100px">{"name":"zhangsan","age":20}</textarea>
+	<button onclick="parse()">转换成对象</button>
+	<button onclick="stringify()" >对象转字符串</button>
+	<script type="text/javascript">
+		function parse(){
+			var jsonStr = document.querySelector("#txt").value;
+			obj = JSON.parse(jsonStr);
+			alert(typeof obj);
+			alert(obj.name);
+			alert(obj.age);
+		}
+
+		function stringify(){
+			var obj = [{"id":"123","myPayeeCount":"10"}];
+			var jsonStr = JSON.stringify(obj);
+			alert(typeof jsonStr);
+			document.querySelector('#txt').innerHTML = jsonStr;
+		}
+	</script>
+</body>
+</html>
