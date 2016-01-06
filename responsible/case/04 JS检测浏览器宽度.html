@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+</head>
+<body>
+	<h1 id="shuchu"></h1>
+	
+	<script type="text/javascript">
+		xianshi();
+		window.onresize = xianshi;
+		function xianshi(){
+			var myh1 = document.getElementById("shuchu");
+			myh1.innerHTML = document.documentElement.clientWidth;
+		}
+	</script>
+</body>
+</html>

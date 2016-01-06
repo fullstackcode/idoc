@@ -1,0 +1,105 @@
+#maincontent{
+	width: 958px;
+	margin: 0 auto;
+}
+#maincontent .leftbar{
+	width: 214px;
+}
+
+#maincontent .leftbar .box .hd{
+	width: 214px;
+	height: 57px;
+	background: url(../images/icons2.png) no-repeat -2px -224px;
+}
+#maincontent .leftbar .box .ft{
+	width: 214px;
+	height: 31px;
+	background: url(../images/icons2.png) no-repeat -2px -313px;
+}
+#maincontent .leftbar .box .bd ul{
+	list-style: none;
+}
+#maincontent .leftbar .box .bd ul li{
+	width: 154px;
+	height: 33px;
+	padding-left: 60px;
+	background: url(../images/icons2.png) no-repeat -2px -280px;
+}
+#maincontent .leftbar .box .bd ul li a:link,#maincontent .leftbar .box .bd ul li a:visited{
+	font:12px/33px "宋体";
+	color: black;
+	text-decoration: none;
+}
+#maincontent .leftbar .box .bd ul li b{
+	font-size: 0;
+	border:5px solid #F4F4F4;
+	border-left-color:black;
+	float: left;
+	position: relative;
+	top:10px;
+	left: -10px;
+	float: left;
+}
+#maincontent .leftbar .lxwm{
+	padding-top: 20px;
+}
+#maincontent .leftbar .lxwm .hd{
+	background-position: -2px -356px;
+}
+#maincontent .leftbar .lxwm .bd{
+	padding-left: 20px;
+	padding-right: 20px;
+	font: 12px/180% "宋体";
+	background: url(../images/cbg.jpg) repeat-y;
+}
+#maincontent .content{
+	padding-left: 10px;
+	width: 734px;
+}
+#maincontent .content .inner{
+	background: url(../images/content.png) no-repeat;
+}
+#maincontent .content .inner .t{
+	font: 16px/50px "宋体";
+	padding-left: 40px;
+}
+#maincontent .content .inner .breadnav{
+	font: 12px/50px "宋体";
+	padding-right: 20px;
+	padding-left: 20px;
+	background: url(../images/icons2.png) no-repeat -211px -432px;
+}
+#maincontent .content .inner .breadnav a:link,#maincontent .content .inner .breadnav a:visited{
+	text-decoration: none;
+	color: black;
+}
+#maincontent .content .inner .list ul{
+	list-style: none;
+	padding: 0 10px;
+}
+#maincontent .content .inner .list ul li{
+	height: 42px;
+	border-bottom:1px dashed gray;
+	line-height: 42px;
+	padding-left: 20px;
+}
+#maincontent .content .inner .list ul li a{
+	font: 12px/42px "宋体";
+}
+#maincontent .content .inner .list ul li b{
+	width: 0;
+	height: 0;
+	border:2px solid green;
+	font-size: 0;
+	line-height: 0;
+	position: relative;
+	top: -4px;
+	left: -10px;
+	_top:20px;
+	_left:-10px;
+	_float: left;
+}
+#maincontent .content .inner .list ul li a:link,#maincontent .content .inner .list ul li a:visited{
+	color:black;
+	text-decoration: none;
+}

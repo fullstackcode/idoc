@@ -1,0 +1,145 @@
+body{
+	height: 1000px;
+}
+#product{
+	width: 969px;
+	margin: 0 auto;
+	padding-left: 11px;
+}
+#product ul{
+	list-style: none;
+}
+#product ul li{
+	float: left;
+	width: 236px;
+	height: 86px;
+	margin-right: 6px;
+}
+#product ul li a{
+	text-indent: -9999px;
+	display: block;
+	height: 86px;
+	background: url(../images/pros.png) no-repeat;
+}
+#product ul li.no1 a:link,#product ul li.no1 a:visited{
+	background-position: -3px -3px;
+}
+#product ul li.no2 a:link,#product ul li.no2 a:visited{
+	background-position: -239px -4px;
+}
+#product ul li.no3 a:link,#product ul li.no3 a:visited{
+	background-position: -475px -4px;
+}
+#product ul li.no4 a:link,#product ul li.no4 a:visited{
+	background-position: -711px -4px;
+}
+
+#product ul li.no1 a:hover{
+	background-position: -3px -90px;
+}
+#product ul li.no2 a:hover{
+	background-position: -239px -91px;
+}
+#product ul li.no3 a:hover{
+	background-position: -475px -91px;
+}
+#product ul li.no4 a:hover{
+	background-position: -711px -91px;
+}
+#function{
+	width: 982px;
+	height: 210px;
+	padding-left: 2px;
+	margin: 0 auto;
+}
+#function .inner{
+	height: 210px;
+	background: url(../images/icons.png) repeat-x 0 -196px;
+} 
+#function .inner .c1{
+	position: relative;
+	width: 312px;
+	height: 207px;
+	padding-left: 11px;
+	padding-top: 3px;
+	background:url(../images/icons.png) no-repeat right -411px;
+}
+#function .inner .c2{
+	width: 398px;
+	height: 203px;
+	padding-top: 7px;
+	padding-left: 10px;
+	background:url(../images/icons.png) no-repeat right -411px;
+	position: relative;
+}
+#function .inner .c1 h3{
+	width: 209px;
+	height: 55px;
+	text-indent: -999px;
+	background:url(../images/icons2.png) no-repeat -2px 0px;
+}
+#function .inner .jiahao{
+	display: block;
+	width: 35px;
+	height: 24px;
+	background:url(../images/icons2.png) no-repeat -2px -64px;
+	position: absolute;
+	right: 12px;
+	top: 19px;
+}
+#function .inner .jiahao a{
+	display: block;
+	height: 24px;
+}
+#function .inner .neirong{
+	padding-top: 16px;
+}
+#function .inner .neirong .wen{
+	width: 184px;
+	padding-left: 10px;
+	font: 12px/150% "宋体";
+}
+#function .inner .neirong .wen a:link,#function .inner .neirong .wen a:visited{
+	color: #398C00;
+}
+#function .inner .c2 h3{
+	width: 172px;
+	height: 48px;
+	text-indent: -999px;
+	background:url(../images/icons2.png) no-repeat 0px -106px;
+}
+#function .inner .c2 ul{
+	padding-top: 24px;
+	list-style: none;
+}
+#function .inner .c2 ul li{
+	float: left;
+	width: 121px;
+	height: 95px;
+	padding-right: 12px;
+	text-align: center;
+}
+#function .inner .c2 ul li.no3{
+	padding-right: 0;
+}
+#function .inner .c2 ul li a:link,#function .inner .c2 ul li a:visited{
+	font: 12px/24px "宋体";
+	color: #606060;
+	text-decoration: none;
+}
+#function .inner .c2 ul li a:hover{
+	text-decoration: underline;
+}
+#function .inner .c3 h3{
+	width: 139px;
+	height: 39px;
+	text-indent: -999px;
+	background:url(../images/icons2.png) no-repeat -2px -163px;
+	margin-bottom: 20px;
+}
+#function .inner .c3{
+	padding-top: 11px;
+	padding-left: 6px;
+	font: 12px/150% "宋体";
+	color: #5F5F5F
+}

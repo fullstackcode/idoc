@@ -1,0 +1,15 @@
+body{ background: url(../images/bg2.jpg) center top no-repeat; }
+#navbar{ width: 98%; }
+#navbar .hd{ display: none; }
+#navbar .ft{ display: none; }
+#navbar .bd{ width: 100%; }
+#navbar .bd ul li.no1{ width: 11.11111111111%; }
+#navbar .bd ul li{ width: 11.11111111111%; }
+#navbar .bd ul li.no9{ width: 11.11111111111%; }
+#banner{ width: 98%; }
+#banner img{ width: 100%; }
+#product{ width: 98%; }
+#product ul { width: 100%; }
+#product ul li{ width: 49%; margin-right: 0; border: 1px solid gray; box-sizing:border-box; margin-right: 1%; margin-top: 10px; border-radius: 15px; background: -webkit-linear-gradient(-90deg,#4B9A7E,white); }
+#product ul li a{ background: none; text-indent: 0; }
+

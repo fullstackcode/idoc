@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="device.min.js"></script>
+</head>
+<body>
+	<h1 id="biaoti"></h1>
+
+	<script type="text/javascript">
+		var myh1 = document.getElementById("biaoti");
+		if(device.mobile()){
+			myh1.innerHTML = "哈哈，我的设备是手机~";
+		}else if(device.ipad()){
+			myh1.innerHTML = "我是土豪，我有ipad！";
+		}else{
+			myh1.innerHTML = "我就是一个台式机";
+		}
+	</script>
+</body>
+</html>

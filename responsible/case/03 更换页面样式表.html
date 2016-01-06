@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link id="mylink" rel="stylesheet" href="css/1.css" type="text/css"/>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var mybut = document.getElementById("changecss");
+			var mylink = document.getElementById("mylink");
+			mybut.onclick = function(){
+				mylink.href = "css/2.css";
+			}
+		}
+	</script>
+</head>
+<body>
+	<input id="changecss" type="button" value="按我更改样式表" />
+</body>
+</html>
