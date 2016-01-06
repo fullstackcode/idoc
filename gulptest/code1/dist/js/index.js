@@ -1,0 +1,3 @@
+(funciton(){
+	alert("hello world")
+})();
